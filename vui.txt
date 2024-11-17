@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cách chăm sóc trẻ em dưới 3 tuổi</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+    }
+    .container {
+      padding: 20px;
+    }
+    h1, h2 {
+      color: #4CAF50;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 10px;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 5px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    .tip {
+      margin-top: 20px;
+      padding: 15px;
+      background-color: #e7f9e7;
+      border-left: 6px solid #4CAF50;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Cách chăm sóc trẻ em dưới 3 tuổi</h1>
+</header>
+
+<div class="container">
+  <h2>Những lưu ý quan trọng</h2>
+  <ul>
+    <li>Đảm bảo trẻ ăn đủ chất dinh dưỡng phù hợp với lứa tuổi.</li>
+    <li>Thường xuyên vệ sinh cá nhân và môi trường sống của trẻ.</li>
+    <li>Quan sát và theo dõi sự phát triển về thể chất và tinh thần của trẻ.</li>
+    <li>Đưa trẻ đi tiêm phòng đầy đủ và đúng lịch.</li>
+    <li>Dành thời gian chơi cùng và trò chuyện với trẻ để phát triển kỹ năng giao tiếp.</li>
+  </ul>
+
+  <button onclick="showTip()">Xem thêm mẹo chăm sóc</button>
+
+  <div class="tip" id="tipSection">
+    <h2>Mẹo chăm sóc trẻ</h2>
+    <p>1. Đọc sách hoặc kể chuyện cho trẻ nghe hàng ngày.</p>
+    <p>2. Để trẻ vận động tự nhiên, tránh ép buộc ngồi hoặc đứng sớm.</p>
+    <p>3. Đảm bảo trẻ ngủ đủ giấc (12-14 giờ mỗi ngày).</p>
+  </div>
+</div>
+
+<script>
+  function showTip() {
+    const tipSection = document.getElementById('tipSection');
+    if (tipSection.style.display === "none" || tipSection.style.display === "") {
+      tipSection.style.display = "block";
+    } else {
+      tipSection.style.display = "none";
+    }
+  }
+</script>
+
+</body>
+</html>
